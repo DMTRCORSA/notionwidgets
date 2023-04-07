@@ -1,34 +1,8 @@
-<body> 
-  div(id='outer-board')
-  div(id='board') 
-    div(id='banner')
-      div 
-        div(id='message')
-        div(id='new-game') Tap here to start!
-    - var n=0;
-    while n < 160
-      div(class="empty")
-        div(class="inner-tile")
-          div(class="inner-inner-tile")
-      - n++;
-  div(id='stats')
-    div(class='labels') Scores
-      div(id='score' class='frame') 0        
-    button(class='btn btn-rounded' id="left") 
-      i(class="fa fas fa-arrow-left")
-    button(class='btn btn-rounded' id="right")
-      i(class="fa fas fa-arrow-right")
-    button(class='btn btn-rounded' id="rotate") 
-      i(class="fa fas fa-undo flipx")
-    button(class='btn btn-rounded' id="down") 
-      i(class="fa fas fa-arrow-down")
-                 </body>
-  
-  <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js" integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw=" crossorigin="anonymous"></script>
-
-                  <style>
-
-body {
+<!DOCTYPE html>
+<html>
+<head>
+Сюда стили, скрипты и тд
+  body {
   background-color: #c4d6a7;
   font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
 }
@@ -163,9 +137,8 @@ body {
   height: 8px;
   margin: 3px;
 }
-</style>
 
-<script>class Position {
+  class Position {
   constructor(x, y) {
     this.x = x;
     this.y = y;
@@ -908,4 +881,37 @@ $("#left").click(function() {
 $("#right").click(function() {
   board.rightKeyPress();
 });
-</script>
+
+   <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js" integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw=" crossorigin="anonymous"></script>
+
+ 
+</head>
+<body>
+
+div(id='outer-board')
+  div(id='board') 
+    div(id='banner')
+      div 
+        div(id='message')
+        div(id='new-game') Tap here to start!
+    - var n=0;
+    while n < 160
+      div(class="empty")
+        div(class="inner-tile")
+          div(class="inner-inner-tile")
+      - n++;
+  div(id='stats')
+    div(class='labels') Scores
+      div(id='score' class='frame') 0        
+    button(class='btn btn-rounded' id="left") 
+      i(class="fa fas fa-arrow-left")
+    button(class='btn btn-rounded' id="right")
+      i(class="fa fas fa-arrow-right")
+    button(class='btn btn-rounded' id="rotate") 
+      i(class="fa fas fa-undo flipx")
+    button(class='btn btn-rounded' id="down") 
+      i(class="fa fas fa-arrow-down")
+
+
+</body>
+</html>
