@@ -1,292 +1,85 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <style>
+      .button {
+        display: flex;
+        column-gap: 8px;
+        padding: 4px 14px;
+        background-color: #f7f7f5;
+        border: solid 1px;
+        border-color: #ebebeb;
+        border-radius: 8px;
+        font-family: "Roboto", sans-serif;
+        width: max-content;
+        text-decoration: none;
+        color: #373530;
+        font-size: 12px;
+        align-items: center;
+      }
 
+      .button:hover {
+        background-color: #ebebeb;
+      }
+    </style>
   </head>
 
-  <body style="margin: 0px;">
-      
+  <body style="margin: 0px">
     <div style="display: flex; flex-direction: column; gap: 8px">
       <div style="display: flex; gap: 8px">
-        <a
-          href="https://docs.google.com/document/u/0/"
-          target="_blank"
-          style="
-            display: flex;
-            column-gap: 8px;
-            padding: 4px 14px;
-            background-color: #f7f7f5;
-            border: solid 1px;
-            border-color: #ebebeb;
-            border-radius: 8px;
-            font-family: 'Roboto', sans-serif;
-            width: max-content;
-            text-decoration: none;
-            color: #373530;
-            font-size: 12px;
-            align-items: center;
-          "
-        >
-          <img
-            src="https://static.tildacdn.com/tild3137-3836-4234-b830-323766306266/icons8--google_1.svg"
-            width="24"
-            height="24"
-            style="object-fit: contain"
-          />
-          <span>Google Документы</span> </a>
+        <a href="https://docs.google.com/document/u/0/" target="_blank" class="button">
+          <img src="https://static.tildacdn.com/tild3137-3836-4234-b830-323766306266/icons8--google_1.svg" width="24" height="24" style="object-fit: contain" />
+          <span>Google Документы</span>
+        </a>
 
+        <a href="https://docs.google.com/spreadsheets/u/0/" target="_blank" class="button">
+          <img src="https://static.tildacdn.com/tild3434-3562-4362-b463-396131333838/icons8--google_1.svg" width="24" height="24" style="object-fit: contain" />
+          <span>Google Таблицы</span>
+        </a>
 
-<a
-          href="https://docs.google.com/spreadsheets/u/0/"
-          target="_blank"
-          style="
-            display: flex;
-            column-gap: 8px;
-            padding: 4px 14px;
-            background-color: #f7f7f5;
-            border: solid 1px;
-            border-color: #ebebeb;
-            border-radius: 8px;
-            font-family: 'Roboto', sans-serif;
-            width: max-content;
-            text-decoration: none;
-            color: #373530;
-            font-size: 12px;
-            align-items: center;
-          "
-        >
-          <img
-            src="https://static.tildacdn.com/tild3434-3562-4362-b463-396131333838/icons8--google_1.svg"
-            width="24"
-            height="24"
-            style="object-fit: contain"
-          />
-          <span>Google Таблицы</span> </a>
+        <a href="https://docs.google.com/presentation/u/0/" target="_blank" class="button">
+          <img src="https://static.tildacdn.com/tild3032-6336-4865-b266-366239616338/icons8-google-slides.svg" width="24" height="24" style="object-fit: contain" />
+          <span>Google Презентации</span>
+        </a>
 
-<a
-          href="https://docs.google.com/presentation/u/0/"
-          target="_blank"
-          style="
-            display: flex;
-            column-gap: 8px;
-            padding: 4px 14px;
-            background-color: #f7f7f5;
-            border: solid 1px;
-            border-color: #ebebeb;
-            border-radius: 8px;
-            font-family: 'Roboto', sans-serif;
-            width: max-content;
-            text-decoration: none;
-            color: #373530;
-            font-size: 12px;
-            align-items: center;
-          "
+        <a href="https://meet.google.com" target="_blank" class="button">
+          <img src="https://static.tildacdn.com/tild3037-6530-4435-a665-643731346134/icons8-google-meet_1.svg" width="24" height="24" style="object-fit: contain" />
+          <span>Google Meet</span></a
         >
-          <img
-            src="https://static.tildacdn.com/tild3032-6336-4865-b266-366239616338/icons8-google-slides.svg"
-            width="24"
-            height="24"
-            style="object-fit: contain"
-          />
-          <span>Google Презентации</span> </a>
 
-          <a
-          href="https://meet.google.com"
-          target="_blank"
-          style="
-            display: flex;
-            column-gap: 8px;
-            padding: 4px 14px;
-            background-color: #f7f7f5;
-            border: solid 1px;
-            border-color: #ebebeb;
-            border-radius: 8px;
-            font-family: 'Roboto', sans-serif;
-            width: max-content;
-            text-decoration: none;
-            color: #373530;
-            font-size: 12px;
-            align-items: center;
-          "
-        >
-          <img
-            src="https://static.tildacdn.com/tild3037-6530-4435-a665-643731346134/icons8-google-meet_1.svg"
-            width="24"
-            height="24"
-            style="object-fit: contain"
-          />
-          <span>Google Meet</span></a>
+        <a href="https://disk.yandex.ru/" target="_blank" class="button">
+          <img src="https://static.tildacdn.com/tild3430-3735-4838-b566-623264346434/icons8--.svg" width="24" height="24" style="object-fit: contain" />
+          <span>Диск. Яндекс</span>
+        </a>
 
-          <a
-          href="https://disk.yandex.ru/"
-          target="_blank"
-          style="
-            display: flex;
-            column-gap: 8px;
-            padding: 4px 14px;
-            background-color: #f7f7f5;
-            border: solid 1px;
-            border-color: #ebebeb;
-            border-radius: 8px;
-            font-family: 'Roboto', sans-serif;
-            width: max-content;
-            text-decoration: none;
-            color: #373530;
-            font-size: 12px;
-            align-items: center;
-          "
-        >
-          <img
-            src="https://static.tildacdn.com/tild3430-3735-4838-b566-623264346434/icons8--.svg"
-            width="24"
-            height="24"
-            style="object-fit: contain"
-          />
-          <span>Диск. Яндекс</span> </a>
-
-          <a
-          href="https://mail.yandex.ru/#inbox"
-          target="_blank"
-          style="
-            display: flex;
-            column-gap: 8px;
-            padding: 4px 14px;
-            background-color: #f7f7f5;
-            border: solid 1px;
-            border-color: #ebebeb;
-            border-radius: 8px;
-            font-family: 'Roboto', sans-serif;
-            width: max-content;
-            text-decoration: none;
-            color: #373530;
-            font-size: 12px;
-            align-items: center;
-          "
-        >
-          <img
-            src="https://static.tildacdn.com/tild6333-6465-4230-b634-326136616531/messengers.svg"
-            width="24"
-            height="24"
-            style="object-fit: contain"
-          />
-          <span>Диск. Почта</span> </a>
-          
+        <a href="https://mail.yandex.ru/#inbox" target="_blank" class="button">
+          <img src="https://static.tildacdn.com/tild6333-6465-4230-b634-326136616531/messengers.svg" width="24" height="24" style="object-fit: contain" />
+          <span>Диск. Почта</span>
+        </a>
       </div>
 
-
       <div style="display: flex; gap: 8px">
-        <a
-          href="https://olymp.clinic"
-          target="_blank"
-          style="
-            display: flex;
-            column-gap: 8px;
-            padding: 4px 14px;
-            background-color: #f7f7f5;
-            border: solid 1px;
-            border-color: #ebebeb;
-            border-radius: 8px;
-            font-family: 'Roboto', sans-serif;
-            width: max-content;
-            text-decoration: none;
-            color: #373530;
-            font-size: 12px;
-            align-items: center;
-          "
-        >
-          <img
-            src="https://static.tildacdn.com/tild6263-3830-4631-a531-626536643434/__icon.svg"
-            width="24"
-            height="24"
-            style="object-fit: contain"
-          />
-          <span>Олимп Клиник Цветной</span> </a>
+        <a href="https://olymp.clinic" target="_blank" class="button">
+          <img src="https://static.tildacdn.com/tild6263-3830-4631-a531-626536643434/__icon.svg" width="24" height="24" style="object-fit: contain" />
+          <span>Олимп Клиник Цветной</span>
+        </a>
 
-          <a
-          href="https://ogni.clinic"
-          target="_blank"
-          style="
-            display: flex;
-            column-gap: 8px;
-            padding: 4px 14px;
-            background-color: #f7f7f5;
-            border: solid 1px;
-            border-color: #ebebeb;
-            border-radius: 8px;
-            font-family: 'Roboto', sans-serif;
-            width: max-content;
-            text-decoration: none;
-            color: #373530;
-            font-size: 12px;
-            align-items: center;
-          "
-        >
-          <img
-            src="https://static.tildacdn.com/tild3639-3034-4662-a164-306630326534/__icon.svg"
-            width="24"
-            height="24"
-            style="object-fit: contain"
-          />
+        <a href="https://ogni.clinic" target="_blank" class="button">
+          <img src="https://static.tildacdn.com/tild3639-3034-4662-a164-306630326534/__icon.svg" width="24" height="24" style="object-fit: contain" />
           <span>Огни Олимпа</span>
         </a>
 
-        <a
-          href="https://olimp5.ru"
-          target="_blank"
-          style="
-            display: flex;
-            column-gap: 8px;
-            padding: 4px 14px;
-            background-color: #f7f7f5;
-            border: solid 1px;
-            border-color: #ebebeb;
-            border-radius: 8px;
-            font-family: 'Roboto', sans-serif;
-            width: max-content;
-            text-decoration: none;
-            color: #373530;
-            font-size: 12px;
-            align-items: center;
-          "
-        >
-          <img
-            src="https://static.tildacdn.com/tild3639-3930-4862-b734-316639396463/_icon.svg"
-            width="24"
-            height="24"
-            style="object-fit: contain"
-          />
+        <a href="https://olimp5.ru" target="_blank" class="button">
+          <img src="https://static.tildacdn.com/tild3639-3930-4862-b734-316639396463/_icon.svg" width="24" height="24" style="object-fit: contain" />
           <span>Центр Культуры и Здоровья</span>
         </a>
 
-        <a
-          href="https://olymp5.clinic"
-          target="_blank"
-          style="
-            display: flex;
-            column-gap: 8px;
-            padding: 4px 14px;
-            background-color: #f7f7f5;
-            border: solid 1px;
-            border-color: #ebebeb;
-            border-radius: 8px;
-            font-family: 'Roboto', sans-serif;
-            width: max-content;
-            text-decoration: none;
-            color: #373530;
-            font-size: 12px;
-            align-items: center;
-          "
-        >
-          <img
-            src="https://static.tildacdn.com/tild3037-3435-4239-b437-373330316132/__icon.svg"
-            width="24"
-            height="24"
-            style="object-fit: contain"
-          />
+        <a href="https://olymp5.clinic" target="_blank" class="button">
+          <img src="https://static.tildacdn.com/tild3037-3435-4239-b437-373330316132/__icon.svg" width="24" height="24" style="object-fit: contain" />
           <span>Олимп Клиник Моисеева</span>
         </a>
       </div>
