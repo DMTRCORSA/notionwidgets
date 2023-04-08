@@ -1,15 +1,51 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html>
   <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@1000&display=swap" rel="stylesheet" />
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;900;700&display=swap" rel="stylesheet">
+
+
+
+ <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js" integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw=" crossorigin="anonymous"></script>
+
+<script> // START CLOCK SCRIPT
+
+Number.prototype.pad = function(n) {
+  for (var r = this.toString(); r.length < n; r = 0 + r);
+  return r;
+};
+
+function updateClock() {
+  var now = new Date();
+  var milli = now.getMilliseconds(),
+    sec = now.getSeconds(),
+    min = now.getMinutes(),
+    hou = now.getHours(),
+    mo = now.getMonth(),
+    dy = now.getDate(),
+    yr = now.getFullYear();
+  var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+  var tags = ["h", "m", "s",],
+    corr = [hou.pad(2), min.pad(2), sec.pad(2), 
+      // milli
+      ];
+  for (var i = 0; i < tags.length; i++)
+    document.getElementById(tags[i]).firstChild.nodeValue = corr[i];
+}
+
+function initClock() {
+  updateClock();
+  window.setInterval("updateClock()", 1);
+}
+
+// END CLOCK SCRIPT</script>
 
     <style>
       .top {
-        display: r;
+        display: flex;
         column-gap: 8px;
-        padding: 12px 14px;
+        padding: 0px;
         background-color: #373530;
         border: solid 1px;
         border-color: #373530;
@@ -18,27 +54,67 @@
         font-family: "Roboto", sans-serif;
         width: 100%;
         text-decoration: none;
-        color: #ffffff;
+        color: #6e6a62;
         font-size: 16px;
-        align-items: center;
+        align-items: top;
+        justify-content: space-between;
+
 
       }
-
     </style>
+
+    <style> body {background-color:#2d2d2d;}
+
+#timedate {
+  font-family: "Roboto", sans-serif;
+  text-align:left;
+ font-size: 6px;
+  color:#fff;
+}</style>
+
   </head>
 
-  <body style="margin: 0px">
+
+
+
+
+
+
+
+
+
+
+
+  <body style="margin: 0px; height: 100vh;" onLoad="initClock()">
  
 
     <div style="display: flex; flex-direction: column; gap: 8px">
-      <div style="display: flex; gap: 8px">
-        
-        <a href="https://docs.google.com/document/u/0/" target="_blank" class="top">
-          
-          <span>Google Документы</span>
-        
-        </a>
+      <div style="height: 100vh; display: flex; gap: 8px" class="top">
+          <p style="color: #ffffff !important;font-size: 24px !important;font-weight: 500; margin-left: 24px; margin-top: 24px !important; font-weight: 700;">Список актуальных задач</p>
+
+          <div style="margin-top: 24px !important; margin-right: 24px !important;" id="timedate">
+   
+    <!-- <br /> -->
+    <!-- <a id="h" style="font-size: 16px;">12</a>: -->
+    <!-- <a id="m" style="font-size: 16px;">00</a>: -->
+    <!-- <a id="s" style="font-size: 16px;">00</a> -->
+    <!-- <a id="mi">000</a> -->
+
+     
+
+  </div>
+  <div style="margin-top: 28px !important; margin-right: 24px !important;">Время по МСК: 
+    <a id="h" style="margin-left: 8px; color: #ffffff !important;font-size: 18px !important;font-weight: 500;">12</a> : <a id="m" style="color: #ffffff !important;font-size: 18px !important;font-weight: 500;">00</a> : <a id="s" style="color: #ffffff !important;font-size: 18px !important;font-weight: 500;">00</a>
+    <!-- <a id="mi">000</a> -->
+
+    <!-- <a id="mon" style="font-size: 24px !important;font-weight: 700;">January</a> -->
+    <!-- <a id="d" style="font-size: 24px !important;font-weight: 700;">1</a>, -->
+    <!-- <a id="y" style="font-size: 24px !important;font-weight: 700;">0</a></div> -->
       </div>
+
     </div>
   </body>
 </html>
+
+
+ 
