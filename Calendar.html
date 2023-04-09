@@ -33,18 +33,21 @@ Source https://codepen.io/ismailvtl/pen/KrVrbp
     }
 
 .calendar-controls {
-	background: #ebebeb;
-	border-radius: 8px;
+	background: #373530;
+	color: #fff;
+	border-top-right-radius: 8px;
+	border-top-left-radius: 8px;
 }
 
 .calendar {
         font-family: "Roboto", sans-serif;
     position: relative;
-    max-width: 400px; /*change as per your design need */
-    min-width: 320px;
+    width: 100%; /*change as per your design need */
+/*    min-width: 100vh;*/
+height: 100vh;
     background: var(--calendar-bg-color);
     color: var(--calendar-font-color);
-    margin: 20px auto;
+/*    margin: 2px auto;*/
     box-sizing: border-box;
     overflow: hidden;
     font-weight: 500;
@@ -108,10 +111,12 @@ Source https://codepen.io/ismailvtl/pen/KrVrbp
     text-align: center;
     cursor: pointer;
     margin: 3px 0px;
-    background: var(--calendar-current-date-color);
+    background: #ebebeb;
     padding: 8px 0px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
 
-    border-radius: 8px;
+/*    border-radius: 8px;*/
 }
 
 .calendar .calendar-inner .calendar-controls .calendar-year-month {
@@ -156,14 +161,14 @@ Source https://codepen.io/ismailvtl/pen/KrVrbp
 .calendar .calendar-inner .calendar-controls .calendar-prev a {
     font-family: consolas, sans-serif;
     font-size: 16px;
-    color: #ebebeb;
+    color: #373530;
     text-decoration: none;
     padding: 8px 12px;
     border-radius: 100px;
     border-color: #373530 !important;
-    border: 10px;
+    border-inline: 10px;
     display: inline-block;
-    background: #ebebeb;
+    background: #373530;
     margin: 0 0 10px 0;
 }
 </style>
