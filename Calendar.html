@@ -26,21 +26,37 @@ Source https://codepen.io/ismailvtl/pen/KrVrbp
 * {
     padding: 0;
     margin: 0;
+
+
 }
 
     body{
     background-color: #f7f7f5;
     width: 100%;
     height: 100% !important;
+
+
 /*width: 240px;*/
     }
 
 .calendar-controls {
-	background: #373530;
-	color: #fff;
+	background: #fff;
+	color: #353730;
 	height: 4em;
-	border-top-right-radius: 8px;
+/*		    border: 10px !important;*/
+	    border-color: #dfdfde;
+	border-top-right-radius: 8px !important;
 	border-top-left-radius: 8px;
+
+	border-top-style: solid !important;
+	border-left-style: solid !important;
+	border-bottom-style: solid !important;
+	border-top-style: solid !important;
+
+	border-top-width: 1px !important;
+	border-left-width: 1px !important;
+	border-bottom-width: 1px !important;
+	border-right-width: 1px !important;
 }
 
 .calendar {
@@ -52,7 +68,9 @@ height: 100vh;
     background: var(--calendar-bg-color);
     color: var(--calendar-font-color);
 /*    margin: 2px auto;*/
-    box-sizing: border-box;
+/*    box-sizing: border-box;*/
+/*	    border: 10px !important;*/
+/*	    border-color: #000;*/
     overflow: hidden;
     font-weight: 500;
 }
@@ -61,12 +79,17 @@ height: 100vh;
     padding: 0px;
     width: 100%;
     height: 100% !important;
+
+
 }
 
 .calendar .calendar-inner .calendar-body {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     text-align: center;
+/*    	    border: 10px !important;*/
+/*	    border-color: #000;*/
+
 }
 
 .calendar .calendar-inner .calendar-body div {
@@ -76,16 +99,19 @@ height: 100vh;
     border: 1px solid transparent;
     margin: 10px 2px 0px;
             font-size: 16px !important;
+
 }
 
 .calendar .calendar-inner .calendar-body div:nth-child(-n+7) {
     border: 1px solid transparent;
     border-bottom: 0px solid var(--weekdays-border-bottom-color);
+
 }
 
 .calendar .calendar-inner .calendar-body div:nth-child(-n+7):hover {
     border: 1px solid transparent;
     border-bottom: 0px solid var(--weekdays-border-bottom-color);
+
 }
 
 .calendar .calendar-inner .calendar-body div>a {
@@ -93,23 +119,28 @@ height: 100vh;
     text-decoration: none;
     display: flex;
     justify-content: center;
+
 }
 
 .calendar .calendar-inner .calendar-body div:hover {
     border: 1px solid var(--calendar-date-hover-color);
+
 }
 
 .calendar .calendar-inner .calendar-body div.empty-dates:hover {
     border: 1px solid transparent;
+
 }
 
 .calendar .calendar-inner .calendar-controls {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+
 }
 
 .calendar .calendar-inner .calendar-controls a {
     color: var(--calendar-font-color);
+
 }
 
 .calendar .calendar-inner .calendar-today-date {
@@ -119,8 +150,11 @@ height: 100vh;
     margin: 3px 0px;
     background: #ebebeb;
     padding: 8px 0px;
+/*    	    border: 10px !important;*/
+/*	    border-color: #000;*/
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
+
 
 /*    border-radius: 8px;*/
 }
@@ -130,31 +164,37 @@ height: 100vh;
     min-width: 100px;
     justify-content: space-evenly;
     align-items: center;
+
 }
 
 .calendar .calendar-inner .calendar-controls .calendar-next {
     text-align: right;
+
 }
 
 .calendar .calendar-inner .calendar-controls .calendar-year-month .calendar-year-label,
 .calendar .calendar-inner .calendar-controls .calendar-year-month .calendar-month-label {
     font-weight: bold;
     font-size: 20px;
+
 }
 
 .calendar-today {
 	font-weight: bold;
     font-size: 16px;
+
 }
 
 .calendar .calendar-inner .calendar-body .calendar-today {
     background: #ebebeb;
 /*    var(--calendar-today-color);*/
     border-radius: 8px;
+
 }
 
 .calendar .calendar-inner .calendar-body .calendar-today:hover {
     border: 1px solid transparent;
+
 /*    border-radius: 10px;*/
 }
 
@@ -167,15 +207,16 @@ height: 100vh;
 .calendar .calendar-inner .calendar-controls .calendar-prev a {
     font-family: consolas, sans-serif;
     font-size: 16px;
-    color: #373530;
+    color: #fff;
     text-decoration: none;
     padding: 8px 12px;
     border-radius: 100px;
     border-color: #373530 !important;
     border-inline: 10px;
     display: inline-block;
-    background: #373530;
+    background: #fff;
     margin: 0 0 10px 0;
+
 }
 </style>
 </head>
