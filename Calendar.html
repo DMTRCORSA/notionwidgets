@@ -15,7 +15,7 @@ Source https://codepen.io/ismailvtl/pen/KrVrbp
 :root {
     --calendar-bg-color: #fff;
     --calendar-font-color: #373530;
-    --weekdays-border-bottom-color: #c4c4c4;
+    --weekdays-border-bottom-color: #ebebeb;
     --calendar-date-hover-color: #505050;
     --calendar-current-date-color: #fff;
     --calendar-today-color: #373530;
@@ -30,14 +30,15 @@ Source https://codepen.io/ismailvtl/pen/KrVrbp
 
     body{
     background-color: #f7f7f5;
-    width: 100%;
-    height: 100% !important;
+/*    width: 100%;*/
+/*    height: 100% !important;*/
+width: 240px;
     }
 
 .calendar-controls {
 	background: #373530;
 	color: #fff;
-	height: 4rem;
+	height: 4em;
 	border-top-right-radius: 8px;
 	border-top-left-radius: 8px;
 }
@@ -69,7 +70,7 @@ height: 100vh;
 }
 
 .calendar .calendar-inner .calendar-body div {
-    padding: 8px;
+    padding: 0px;
     min-height: 10px;
     line-height: 30px;
     border: 1px solid transparent;
@@ -79,12 +80,12 @@ height: 100vh;
 
 .calendar .calendar-inner .calendar-body div:nth-child(-n+7) {
     border: 1px solid transparent;
-    border-bottom: 1px solid var(--weekdays-border-bottom-color);
+    border-bottom: 0px solid var(--weekdays-border-bottom-color);
 }
 
 .calendar .calendar-inner .calendar-body div:nth-child(-n+7):hover {
     border: 1px solid transparent;
-    border-bottom: 1px solid var(--weekdays-border-bottom-color);
+    border-bottom: 0px solid var(--weekdays-border-bottom-color);
 }
 
 .calendar .calendar-inner .calendar-body div>a {
